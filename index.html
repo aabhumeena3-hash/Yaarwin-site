@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YaarWin Game Login & App Download (Official Site 2026)</title>
+  <meta name="description" content="Login to YaarWin Game and start playing colour prediction, Aviator, K3 and lottery games instantly. Download the official YaarWin app and register today. Join @AryahOfficial_Yaarwin on Telegram for 24/7 support."/>
+  <meta name="keywords" content="yaarwin game, yaarwin login, yaarwin app download, yaarwin register, yaarwin colour prediction, yaarwin aviator, yaarwin apk, AryahOfficial_Yaarwin"/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; background: #0d1f0d; color: #f0f0f0; line-height: 1.7; }
+    a { color: #f9c700; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #0d1f0d 0%, #1a3a1a 100%);
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #f9c700;
+      flex-wrap: wrap;
+    }
+    header .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    header .logo-img {
+      height: 50px;
+      width: auto;
+    }
+    header .brand-name {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #0099ff;
+      margin-left: 8px;
+    }
+    header nav a {
+      color: #f0f0f0;
+      margin-left: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    header nav a:hover { color: #f9c700; text-decoration: none; }
+
+    /* TELEGRAM BANNER */
+    .telegram-banner {
+      background: linear-gradient(135deg, #0099ff 0%, #00ccff 100%);
+      color: white;
+      padding: 16px 20px;
+      text-align: center;
+      border-bottom: 3px solid #f9c700;
+    }
+    .telegram-banner p {
+      margin: 0;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .telegram-banner a {
+      color: white;
+      font-weight: 700;
+      text-decoration: underline;
+      margin-left: 8px;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #0d1f0d 0%, #1a4d1a 60%, #0d1f0d 100%);
+      text-align: center;
+      padding: 50px 20px 60px;
+      border-bottom: 1px solid #1a3a1a;
+    }
+    .hero-logo {
+      max-width: 350px;
+      height: auto;
+      margin: 0 auto 30px;
+      display: block;
+    }
+    .hero h1 { font-size: 2.2rem; font-weight: 900; color: #f9c700; margin-bottom: 16px; line-height: 1.3; }
+    .hero h2 { font-size: 1.2rem; font-weight: 600; color: #ccc; margin-bottom: 20px; }
+    .hero p { max-width: 650px; margin: 0 auto 30px; color: #bbb; font-size: 1rem; }
+    .btn-group { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-bottom: 30px; }
+    .btn {
+      padding: 14px 30px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-primary { background: #f9c700; color: #0d1f0d; }
+    .btn-primary:hover { background: #ffd700; text-decoration: none; }
+    .btn-secondary { background: transparent; color: #f9c700; border: 2px solid #f9c700; }
+    .btn-secondary:hover { background: #f9c700; color: #0d1f0d; text-decoration: none; }
+    .btn-outline { background: transparent; color: #fff; border: 2px solid #555; }
+    .btn-outline:hover { border-color: #f9c700; color: #f9c700; text-decoration: none; }
+    .btn-telegram { background: #0099ff; color: #fff; border: 2px solid #0099ff; }
+    .btn-telegram:hover { background: #0077cc; text-decoration: none; }
+
+    /* INVITE BOX */
+    .invite-box {
+      background: linear-gradient(135deg, #1a3a1a, #2a5a2a);
+      border: 1px solid #f9c700;
+      border-radius: 12px;
+      padding: 16px 28px;
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+    .invite-box span { color: #f9c700; font-weight: 800; font-size: 1.3rem; letter-spacing: 2px; }
+
+    /* SECTIONS */
+    section { padding: 60px 20px; max-width: 900px; margin: 0 auto; }
+    section h2 { font-size: 1.7rem; font-weight: 800; color: #f9c700; margin-bottom: 24px; border-left: 4px solid #f9c700; padding-left: 14px; }
+    section h3 { font-size: 1.1rem; font-weight: 700; color: #f9c700; margin-bottom: 8px; }
+    section p { color: #bbb; margin-bottom: 14px; }
+
+    /* INFO TABLE */
+    .info-table { width: 100%; border-collapse: collapse; margin: 24px 0; }
+    .info-table th, .info-table td { border: 1px solid #2a5a2a; padding: 12px 16px; text-align: left; }
+    .info-table th { background: #1a3a1a; color: #f9c700; font-weight: 700; }
+    .info-table td { background: #0f2a0f; color: #ddd; }
+
+    /* FEATURES GRID */
+    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 24px; }
+    .feature-card {
+      background: #0f2a0f;
+      border: 1px solid #2a5a2a;
+      border-radius: 12px;
+      padding: 24px;
+      transition: border-color 0.2s;
+    }
+    .feature-card:hover { border-color: #f9c700; }
+    .feature-card .icon { font-size: 2rem; margin-bottom: 10px; }
+    .feature-card h3 { font-size: 1rem; }
+    .feature-card p { font-size: 0.9rem; color: #999; margin: 0; }
+
+    /* GAME CARDS */
+    .games-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 24px; }
+    .game-card {
+      background: linear-gradient(135deg, #0f2a0f, #1a3a1a);
+      border: 1px solid #2a5a2a;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+    .game-card .game-icon { font-size: 2.4rem; margin-bottom: 10px; }
+    .game-card h3 { font-size: 1rem; margin-bottom: 6px; }
+    .game-card p { font-size: 0.85rem; color: #999; margin: 0; }
+
+    /* STEPS */
+    .steps { list-style: none; counter-reset: step; margin: 20px 0; }
+    .steps li {
+      counter-increment: step;
+      padding: 12px 16px 12px 56px;
+      position: relative;
+      background: #0f2a0f;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      color: #ccc;
+    }
+    .steps li::before {
+      content: counter(step);
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #f9c700;
+      color: #0d1f0d;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.85rem;
+    }
+
+    /* TIPS */
+    .tips-list { list-style: none; margin-top: 16px; }
+    .tips-list li { padding: 10px 14px; background: #0f2a0f; border-radius: 8px; margin-bottom: 8px; color: #ccc; }
+    .tips-list li::before { content: "💡 "; }
+
+    /* FAQ */
+    .faq-item { background: #0f2a0f; border: 1px solid #2a5a2a; border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+    .faq-question { padding: 16px 20px; font-weight: 700; color: #f0f0f0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+    .faq-question:hover { color: #f9c700; }
+    .faq-answer { padding: 0 20px 16px; color: #aaa; font-size: 0.95rem; display: none; }
+    .faq-item.open .faq-answer { display: block; }
+    .faq-item.open .faq-question { color: #f9c700; }
+
+    /* CTA STRIP */
+    .cta-strip {
+      background: linear-gradient(135deg, #1a3a1a, #2a5a2a);
+      border-top: 1px solid #2a5a2a;
+      border-bottom: 1px solid #2a5a2a;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .cta-strip h2 { font-size: 1.6rem; font-weight: 800; color: #f9c700; margin-bottom: 12px; border: none; padding: 0; }
+    .cta-strip p { color: #bbb; margin-bottom: 28px; }
+
+    /* EARNING CHARTS SECTION */
+    .earning-section {
+      background: linear-gradient(135deg, #0f2a0f, #1a3a1a);
+      padding: 40px 20px;
+      border-top: 2px solid #2a5a2a;
+      border-bottom: 2px solid #2a5a2a;
+    }
+    .earning-section h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #f9c700;
+      margin-bottom: 40px;
+      border: none;
+      padding: 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    .charts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .chart-card {
+      background: linear-gradient(135deg, #1a3a1a, #2a5a2a);
+      border: 2px solid #f9c700;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+    }
+    .chart-card h3 {
+      color: #f9c700;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+    .chart-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    /* TELEGRAM SUPPORT SECTION */
+    .telegram-support-section {
+      background: linear-gradient(135deg, #0099ff15, #0099ff08);
+      border: 3px solid #0099ff;
+      border-radius: 15px;
+      padding: 40px 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    .telegram-support-section h2 {
+      color: #0099ff;
+      margin-bottom: 12px;
+      border: none;
+      padding: 0;
+      font-size: 1.6rem;
+    }
+    .telegram-support-section .handle {
+      color: #f9c700;
+      font-weight: 800;
+      font-size: 1.3rem;
+      margin: 16px 0;
+    }
+    .telegram-support-section p { color: #bbb; margin-bottom: 16px; font-size: 1rem; }
+    .telegram-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    /* DIVIDER */
+    hr { border: none; border-top: 1px solid #2a5a2a; margin: 0; }
+
+    /* FOOTER */
+    footer {
+      background: #080d08;
+      text-align: center;
+      padding: 30px 20px;
+      color: #555;
+      font-size: 0.85rem;
+      border-top: 1px solid #1a3a1a;
+    }
+    footer .brand {
+      color: #0099ff;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    footer a { color: #888; }
+
+    /* RESPONSIVE */
+    @media(max-width: 600px) {
+      .hero h1 { font-size: 1.5rem; }
+      header nav { display: none; }
+      .charts-grid { grid-template-columns: 1fr; }
+      header .logo-img { height: 40px; }
+      .telegram-buttons { flex-direction: column; }
+      .telegram-buttons .btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo-container">
+    <img src="images/yaarwin-logo.jpg" alt="YaarWin Logo" class="logo-img">
+    <span class="brand-name">@AryahOfficial_Yaarwin</span>
+  </div>
+  <nav>
+    <a href="https://4yaarwin.com/#/register?invitationCode=356371188569">Register</a>
+    <a href="https://4yaarwin.com/#/register?invitationCode=356371188569">Login</a>
+    <a href="https://4yaarwin.com/#/register?invitationCode=356371188569">Download</a>
+    <a href="https://t.me/yaarwin666" target="_blank">📞 Support</a>
+  </nav>
+</header>
+
+<!-- TELEGRAM BANNER -->
+<div class="telegram-banner">
+  <p>🚀 Follow Official Channel: <a href="https://t.me/yaarwin666" target="_blank">@AryahOfficial_Yaarwin</a> for Latest Updates & Support</p>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <img src="images/yaarwin-logo.jpg" alt="YaarWin Game" class="hero-logo">
+  <h1>YaarWin Game Login & App Download (Official Site 2026)</h1>
+  <h2>YaarWin Game Login – Fast & Secure Access</h2>
+  <p>Login to YaarWin and start playing Colour Prediction, Aviator, K3, and Lottery games instantly. Use your mobile number to access your account securely and start winning today.</p>
+  <p style="color: #0099ff; font-weight: 600; margin-top: 16px;">Managed by: <strong>@AryahOfficial_Yaarwin</strong> on Telegram</p>
+  <div class="btn-group">
+    <a href="https://4yaarwin.com/#/register?invitationCode=356371188569" class="btn btn-primary">🚀 Register Now</a>
+    <a href="https://4yaarwin.com/#/register?invitationCode=356371188569" class="btn btn-secondary">📲 Download App</a>
+    <a href="https://t.me/yaarwin666" target="_blank" class="btn btn-telegram">📞 Telegram Support</a>
+  </div>
+  <div class="invite-box">
+    Use Invite Code: <span>356371188569</span> for a bonus on registration!
+  </div>
+</div>
+
+<hr/>
+
+<!-- INFO TABLE -->
+<section>
+  <h2>📊 YaarWin Game Info: APK, Games & Invitation Code</h2>
+  <table class="info-table">
+    <tr><th>Detail</th><th>Info</th></tr>
+    <tr><td>Name of the Game</td><td>YaarWin Game</td></tr>
+    <tr><td>Invitation Code</td><td><strong>356371188569</strong></td></tr>
+    <tr><td>APK Size</td><td>~6 MB</td></tr>
+    <tr><td>Available Games</td><td>Colour Prediction, Aviator, K3, WinGo, Big Small</td></tr>
+    <tr><td>Minimum Deposit</td><td>₹100</td></tr>
+    <tr><td>Withdrawal Methods</td><td>UPI, Bank Transfer, USDT</td></tr>
+    <tr><td>Official Support</td><td><a href="https://t.me/yaarwin666" target="_blank">📞 Telegram: @AryahOfficial_Yaarwin</a></td></tr>
+  </table>
+</section>
+
+<hr/>
+
+<!-- ABOUT -->
+<section>
+  <h2>🏆 What is YaarWin Game?</h2>
+  <p>YaarWin is one of India's fastest-growing online gaming platforms. With over 500 games available - including Colour Prediction, Aviator, K3, WinGo, and more - it gives every player a chance to win real money while having fun.</p>
+  <p>The platform is designed to be mobile-first, allowing you to play on any device - smartphone, tablet, or desktop. Deposits and withdrawals are simple, fast, and support Indian payment methods like UPI and bank transfer.</p>
+  <p>Whether you're looking for a side income or just exciting gameplay, <strong>YaarWin Game</strong> is the platform built for Indian players in 2026. Managed and supported by <strong>@AryahOfficial_Yaarwin</strong> on Telegram.</p>
+  <div class="btn-group" style="margin-top:20px;">
+    <a href="https://4yaarwin.com/#/register?invitationCode=356371188569" class="btn btn-primary">Play Now on YaarWin</a>
+    <a href="https://t.me/yaarwin666" target="_blank" class="btn btn-telegram">📞 Join Support Channel</a>
+  </div>
+</section>
+
+<hr/>
+
+<!-- FEATURES -->
+<section>
+  <h2>⭐ Features of YaarWin Game</h2>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="icon">📱</div>
+      <h3>Easy-to-Use Interface</h3>
+      <p>Clean design with simple navigation - no confusing menus. Start playing within minutes of registering.</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">⚡</div>
+      <h3>Instant Payouts</h3>
+      <p>Withdraw your winnings directly to your bank account or UPI. Fast processing with no unnecessary delays.</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">👥</div>
+      <h3>Referral Earnings</h3>
+      <p>Invite friends using your invite code and earn commission on every game they play. Passive income, daily.</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">🔒</div>
+      <h3>Secure Transactions</h3>
+      <p>All deposits and withdrawals are encrypted. Your money and personal data are always protected.</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">🎧</div>
+      <h3>24/7 Support</h3>
+      <p>Reach our support team anytime on Telegram @AryahOfficial_Yaarwin. Get instant help with any issue.</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">🎁</div>
+      <h3>Daily Bonuses</h3>
+      <p>Log in every day to claim your daily bonus. New users also get special welcome rewards on first deposit.</p>
+    </div>
+  </div>
+</section>
+
+<hr/>
+
+<!-- GAMES -->
+<section>
+  <h2>🎮 Top Games on YaarWin</h2>
+  <div class="games-grid">
+    <div class="game-card">
+      <div class="game-icon">🎨</div>
+      <h3>Colour Prediction</h3>
+      <p>Predict the colour - Red, Green, or Violet - and win based on the result. Fast rounds, big rewards.</p>
+    </div>
+    <div class="game-card">
+      <div class="game-icon">✈️</div>
+      <h3>Aviator</h3>
+      <p>Watch the multiplier fly and cash out before it crashes. High risk, high reward - India's favourite game.</p>
+    </div>
+    <div class="game-card">
+      <div class="game-icon">🎲</div>
+      <h3>K3 Lottery</h3>
+      <p>Bet on dice combinations and win big. Simple rules, multiple outcomes, and fast results every round.</p>
+    </div>
+    <div class="game-card">
+      <div class="game-icon">🏆</div>
+      <h3>WinGo</h3>
+      <p>India's top lottery-style game. Choose your number or colour and win prizes in under 60 seconds.</p>
+    </div>
+    <div class="game-card">
+      <div class="game-icon">📈</div>
+      <h3>Big Small</h3>
+      <p>Predict whether the total will be Big or Small. One of the simplest and most addictive games on the platform.</p>
+    </div>
+    <div class="game-card">
+      <div class="game-icon">🃏</div>
+      <h3>Teen Patti</h3>
+      <p>The legendary Indian card game, now digital. Challenge players and win real money with every hand.</p>
+    </div>
+  </div>
+</section>
+
+<hr/>
+
+<!-- EARNING SCHEMES & CHARTS -->
+<div class="earning-section">
+  <h2>💰 YaarWin Earning & Bonus Schemes</h2>
+  <p style="text-align: center; color: #bbb; margin-bottom: 30px;">Multiple ways to earn with YaarWin - play games, refer friends, or become an agent!</p>
+  <div class="charts-grid">
+    <div class="chart-card">
+      <h3>📅 Daily Salary System</h3>
+      <img src="images/chart-1.jpg" alt="Daily Salary System">
+      <a href="https://4yaarwin.com/#/register?invitationCode=356371188569" class="btn btn-secondary" style="width: 100%; text-align: center; padding: 10px;">Learn More</a>
+    </div>
+
+    <div class="chart-card">
+      <h3>🎁 Deposit Bonus System</h3>
+      <img src="images/chart-2.jpg" alt="Deposit Bonus System">
+      <a href="https://4yaarwin.com/#/register?invitationCode=356371188569" class="btn btn-secondary" style="width: 100%; text-align: center; padding: 10px;">Register Now</a>
+    </div>
+
+    <div class="chart-card">
+      <h3>📢 Ads Fee Commission</h3>
+      <img src="images/chart-3.jpg" alt="Ads Fee Commission">
+      <a href="https://4yaarwin.com/#/register?invitationCode=356371188569" class="btn btn-secondary" style="width: 100%; text-align: center; padding: 10px;">Join Now</a>
+    </div>
+
+    <div class="chart-card">
+      <h3>👥 Referral Super Bonus</h3>
+      <img src="images/chart-4.jpg" alt="Referral Super Bonus">
+      <a href="https://4yaarwin.com/#/register?invitationCode=356371188569" class="btn btn-secondary" style="width: 100%; text-align: center; padding: 10px;">Start Earning</a>
+    </div>
+
+    <div class="chart-card">
+      <h3>🎯 Agent Referral Bonus</h3>
+      <img src="images/chart-5.jpg" alt="Agent Referral Bonus">
+      <a href="https://4yaarwin.com/#/register?invitationCode=356371188569" class="btn btn-secondary" style="width: 100%; text-align: center; padding: 10px;">Become Agent</a>
+    </div>
+  </div>
+</div>
+
+<hr/>
+
+<!-- TELEGRAM SUPPORT SECTION -->
+<section>
+  <div class="telegram-support-section">
+    <h2>📞 24/7 Official Telegram Support</h2>
+    <p>Managed by: <strong>@AryahOfficial_Yaarwin</strong></p>
+    <div class="handle">@yaarwin666</div>
+    <p>Facing any issues? Need help with registration, login, withdrawals, or have any questions?</p>
+    <p>Our support team is active 24/7 on Telegram. Get instant replies and solutions from the official team.</p>
+    <div class="telegram-buttons">
+      <a href="https://t.me/yaarwin666" target="_blank" class="btn btn-telegram">👉 Join Support Channel 👈</a>
+      <a href="https://t.me/AryahOfficial_Yaarwin" target="_blank" class="btn btn-primary">👉 Personal Support 👈</a>
+    </div>
+    <p style="margin-top: 20px; color: #999; font-size: 0.9rem;">⚠️ Save our Telegram handles for quick access:<br><strong>@yaarwin666</strong> (Main Support)<br><strong>@AryahOfficial_Yaarwin</strong> (Official Account)</p>
+  </div>
+</section>
+
+<hr/>
+
+<!-- DOWNLOAD -->
+<section>
+  <h2>📲 YaarWin App Download (Latest APK 2026)</h2>
+  <p>The YaarWin app is not on Google Play Store. Download the official APK directly from our site in just a few steps:</p>
+  <ol class="steps">
+    <li>Click the <strong>Download App</strong> button below</li>
+    <li>Go to your phone Settings → Security → Enable <strong>Unknown Sources</strong></li>
+    <li>Open the downloaded APK file</li>
+    <li>Tap <strong>Install</strong> and wait for completion</li>
+    <li>Open YaarWin, register or login, and start playing!</li>
+  </ol>
+  <p style="color: #999; margin-top: 16px;">❓ Having trouble downloading? <a href="https://t.me/yaarwin666" target="_blank">Contact support on Telegram @AryahOfficial_Yaarwin</a></p>
+  <div class="btn-group" style="margin-top:24px;">
+    <a href="https://4yaarwin.com/#/register?invitationCode=356371188569" class="btn btn-primary">📲 Download YaarWin APK</a>
+  </div>
+</section>
+
+<hr/>
+
+<!-- REGISTER -->
+<section>
+  <h2>📝 YaarWin Game Registration - Create Account in 2 Minutes</h2>
+  <p>New to YaarWin? Creating an account is quick and free. Follow these steps:</p>
+  <ol class="steps">
+    <li>Visit the official YaarWin website or open the app</li>
+    <li>Click the <strong>Register</strong> button on the homepage</li>
+    <li>Enter your active mobile number</li>
+    <li>Set a strong password (min. 8 characters)</li>
+    <li>Enter invite code <strong>356371188569</strong> to get a registration bonus</li>
+    <li>Accept the Terms & Conditions</li>
+    <li>Complete OTP verification if prompted</li>
+    <li>✅ Your account is ready - login and start playing!</li>
+  </ol>
+  <p style="color: #999; margin-top: 16px;">💬 Stuck during registration? <a href="https://t.me/yaarwin666" target="_blank">Get instant help from @AryahOfficial_Yaarwin on Telegram</a></p>
+  <div class="btn-group" style="margin-top:24px;">
+    <a href="https://4yaarwin.com/#/register?invitationCode=356371188569" class="btn btn-primary">🚀 Register Now – Free</a>
+  </div>
+</section>
+
+<hr/>
+
+<!-- LOGIN -->
+<section>
+  <h2>🔐 YaarWin Game Login - Step-by-Step Guide</h2>
+  <p>Already registered? Here's how to log in quickly:</p>
+  <ol class="steps">
+    <li>Open the YaarWin app or visit the official website</li>
+    <li>Click the <strong>Login</strong> button on the homepage</li>
+    <li>Enter your registered mobile number</li>
+    <li>Enter your password</li>
+    <li>Click <strong>Submit / Login</strong></li>
+    <li>🎉 You're in! Choose a game and start playing</li>
+  </ol>
+  <p style="margin-top:16px; color:#888;">⚠️ Be careful of fake YaarWin websites. Always use the official link provided on this page to avoid scams.</p>
+  <p style="color: #999; margin-top: 16px;">🔑 Forgot password? <a href="https://t.me/yaarwin666" target="_blank">Contact @AryahOfficial_Yaarwin on Telegram immediately</a></p>
+</section>
+
+<hr/>
+
+<!-- WHY TRENDING -->
+<section>
+  <h2>🔥 Why YaarWin Game is Trending in India (2026)</h2>
+  <ul class="tips-list">
+    <li><strong>Mobile-first design</strong> - works perfectly on all Android & iOS devices</li>
+    <li><strong>500+ games</strong> - colour prediction, aviator, k3, slots, and more in one app</li>
+    <li><strong>UPI & bank withdrawals</strong> - withdraw directly to your Indian bank account</li>
+    <li><strong>Invite & earn</strong> - refer friends and earn passive commission every day</li>
+    <li><strong>Fast rounds</strong> - most games complete in under 3 minutes</li>
+    <li><strong>24/7 Telegram support</strong> - instant help from @AryahOfficial_Yaarwin whenever you need it</li>
+  </ul>
+</section>
+
+<hr/>
+
+<!-- TIPS -->
+<section>
+  <h2>🧠 YaarWin Game Tips for Beginners</h2>
+  <ul class="tips-list" style="list-style:none;">
+    <li style="padding:10px 14px; background:#0f2a0f; border-radius:8px; margin-bottom:8px; color:#ccc;">Start with small deposits until you understand the game mechanics</li>
+    <li style="padding:10px 14px; background:#0f2a0f; border-radius:8px; margin-bottom:8px; color:#ccc;">Set a daily budget and stick to it - never chase losses</li>
+    <li style="padding:10px 14px; background:#0f2a0f; border-radius:8px; margin-bottom:8px; color:#ccc;">Learn the rules of each game before betting real money</li>
+    <li style="padding:10px 14px; background:#0f2a0f; border-radius:8px; margin-bottom:8px; color:#ccc;">Use the invite code <strong>356371188569</strong> to get a welcome bonus</li>
+    <li style="padding:10px 14px; background:#0f2a0f; border-radius:8px; margin-bottom:8px; color:#ccc;">Log in daily to claim your free daily bonus</li>
+    <li style="padding:10px 14px; background:#0f2a0f; border-radius:8px; margin-bottom:8px; color:#ccc;">Play responsibly - games are based on luck, not guaranteed income</li>
+    <li style="padding:10px 14px; background:#0f2a0f; border-radius:8px; margin-bottom:8px; color:#ccc;">Have questions? <a href="https://t.me/yaarwin666" target="_blank">Message @AryahOfficial_Yaarwin on Telegram</a> anytime</li>
+  </ul>
+</section>
+
+<hr/>
+
+<!-- CTA STRIP -->
+<div class="cta-strip">
+  <h2>🎯 Ready to Start Winning?</h2>
+  <p>Join thousands of Indian players already earning on YaarWin. Register in 2 minutes - use invite code <strong>356371188569</strong> for your welcome bonus.</p>
+  <div class="btn-group">
+    <a href="https://4yaarwin.com/#/register?invitationCode=356371188569" class="btn btn-primary">🚀 Register Now</a>
+    <a href="https://4yaarwin.com/#/register?invitationCode=356371188569" class="btn btn-secondary">📲 Download App</a>
+    <a href="https://t.me/yaarwin666" target="_blank" class="btn btn-telegram">📞 Chat on Telegram</a>
+  </div>
+</div>
+
+<hr/>
+
+<!-- FAQ -->
+<section>
+  <h2>❓ Frequently Asked Questions</h2>
+
+  <div class="faq-item open">
+    <div class="faq-question" onclick="toggleFaq(this)">What is YaarWin Game? <span>▼</span></div>
+    <div class="faq-answer">YaarWin is an online gaming platform made for Indian users, offering Colour Prediction, Aviator, K3, WinGo, and 500+ other games. Players can win real money by predicting game outcomes and withdraw their earnings via UPI or bank transfer. Officially managed by @AryahOfficial_Yaarwin.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFaq(this)">How do I register on YaarWin? <span>▼</span></div>
+    <div class="faq-answer">Click the Register button on this page, enter your mobile number, create a password, and add invite code <strong>356371188569</strong> to receive your welcome bonus. Complete OTP verification and your account is ready.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFaq(this)">Is the YaarWin App on Google Play Store? <span>▼</span></div>
+    <div class="faq-answer">No. The YaarWin app is not available on Google Play Store or Apple App Store. You need to download the APK file directly from the official website. Enable "Unknown Sources" in your phone settings before installing.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFaq(this)">What is the YaarWin invite code? <span>▼</span></div>
+    <div class="faq-answer">The official invite code for this site is <strong>356371188569</strong>. Enter it during registration to receive a bonus on your first deposit.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFaq(this)">What is the minimum deposit on YaarWin? <span>▼</span></div>
+    <div class="faq-answer">The minimum deposit on YaarWin is typically ₹100. Deposits can be made via UPI, Net Banking, or USDT. Always check the platform for the latest deposit limits.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFaq(this)">How do I withdraw my winnings from YaarWin? <span>▼</span></div>
+    <div class="faq-answer">Go to your YaarWin account dashboard, click Withdraw, choose UPI or Bank Transfer, enter your account details, and submit the request. Most withdrawals are processed within 5–30 minutes.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFaq(this)">Is YaarWin safe and legal in India? <span>▼</span></div>
+    <div class="faq-answer">YaarWin uses encrypted transactions to protect user data and money. However, colour prediction and gaming apps exist in a legal grey area in India and rules vary by state. Always check local laws before participating and play responsibly.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFaq(this)">How do I contact YaarWin support? <span>▼</span></div>
+    <div class="faq-answer">You can reach our support team 24/7 on Telegram. Contact <a href="https://t.me/yaarwin666" target="_blank"><strong>@yaarwin666</strong></a> (Main Support) or <a href="https://t.me/AryahOfficial_Yaarwin" target="_blank"><strong>@AryahOfficial_Yaarwin</strong></a> (Personal Account). We respond to all messages quickly and can help with registration, login, withdrawals, or any other issue.</div>
+  </div>
+
+</section>
+
+<hr/>
+
+<!-- CONCLUSION -->
+<section>
+  <h2>✅ Conclusion</h2>
+  <p>YaarWin Game is one of India's most popular colour prediction and gaming platforms in 2026. With 500+ games, instant UPI withdrawals, a powerful referral system, and 24/7 Telegram support from <strong>@AryahOfficial_Yaarwin</strong>, it's built for Indian players who want fast, fun, and rewarding gameplay.</p>
+  <p>Use invite code <strong>356371188569</strong> when registering to unlock your welcome bonus. Download the app, complete your registration, and start playing today.</p>
+  <p><strong>Need help?</strong> Our official Telegram support team at <strong>@AryahOfficial_Yaarwin</strong> is always ready. Get instant answers to all your questions!</p>
+  <div class="btn-group" style="margin-top:24px;">
+    <a href="https://4yaarwin.com/#/register?invitationCode=356371188569" class="btn btn-primary">🚀 Register Now</a>
+    <a href="https://4yaarwin.com/#/register?invitationCode=356371188569" class="btn btn-secondary">📲 Download App</a>
+    <a href="https://t.me/yaarwin666" target="_blank" class="btn btn-telegram">📞 Join Support Channel</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="brand">Official YaarWin Guide Site 2026</div>
+  <p>Managed by: <strong>@AryahOfficial_Yaarwin</strong></p>
+  <p><a href="https://t.me/yaarwin666" target="_blank">📞 Main Support: @yaarwin666</a></p>
+  <p><a href="https://t.me/AryahOfficial_Yaarwin" target="_blank">📞 Personal Support: @AryahOfficial_Yaarwin</a></p>
+  <p style="margin-top:16px; color:#444;">Disclaimer: This site contains affiliate links. Gaming involves financial risk. Play responsibly and check your local laws.</p>
+</footer>
+
+<!-- FAQ TOGGLE SCRIPT -->
+<script>
+  function toggleFaq(el) {
+    const item = el.parentElement;
+    item.classList.toggle('open');
+  }
+</script>
+
+</body>
+</html>
